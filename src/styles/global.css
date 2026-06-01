@@ -1,0 +1,8 @@
+@import "./reset.css";
+@import "./variables.css";
+
+body {
+    font-family: var(--cp-font-sans);
+    color: var(--cp-body-text-color);
+    background: var(--cp-body-background);
+}

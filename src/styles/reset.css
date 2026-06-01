@@ -1,0 +1,99 @@
+/* =========================
+   CryptoPulse Modern Reset
+   ========================= */
+
+/* 1. Box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+    margin: 0;
+}
+
+/* 3. Base HTML */
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+/* 4. Body base */
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+/* 5. Media elements */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 6. Forms inherit typography */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    color: inherit;
+}
+
+/* 7. Remove default list styles */
+ul,
+ol {
+    list-style: none;
+}
+
+/* 8. Anchor reset */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 9. Tables */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* 10. Button reset */
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* 11. Remove textarea resize default chaos */
+textarea {
+    resize: vertical;
+}
+
+/* 12. Accessibility: focus */
+:focus-visible {
+    outline: 2px solid var(--color-primary, #4f7cff);
+    outline-offset: 2px;
+}
+
+/* 13. Selection */
+::selection {
+    background: rgba(79, 124, 255, 0.25);
+}
+
+/* 14. Reduce animation for accessibility */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

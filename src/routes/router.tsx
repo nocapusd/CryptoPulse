@@ -1,13 +1,13 @@
 import {createBrowserRouter, Navigate} from "react-router-dom";
-import {RootLayout} from "../layouts/RootLayout/RootLayout.tsx";
-import {AuthLayout} from "../layouts/AuthLayout/AuthLayout.tsx";
-import {LoginPage} from "../pages/LoginPage/LoginPage.tsx";
-import {RegisterPage} from "../pages/RegisterPage/RegisterPage.tsx";
 import {AppLayout} from "../layouts/AppLayout/AppLayout.tsx";
-import {DashboardPage} from "../pages/DashboardPage/DashboardPage.tsx";
-import {WatchlistPage} from "../pages/WatchlistPage/WatchlistPage.tsx";
+import {AuthLayout} from "../layouts/AuthLayout/AuthLayout.tsx";
+import {RootLayout} from "../layouts/RootLayout/RootLayout.tsx";
 import {CoinDetailPage} from "../pages/CoinDetailPage/CointDetailPage.tsx";
+import {DashboardPage} from "../pages/DashboardPage/DashboardPage.tsx";
+import {LoginPage} from "../pages/LoginPage/LoginPage.tsx";
 import {NotFoundPage} from "../pages/NotFoundPage/NotFoundPage.tsx";
+import {RegisterPage} from "../pages/RegisterPage/RegisterPage.tsx";
+import {WatchlistPage} from "../pages/WatchlistPage/WatchlistPage.tsx";
 import {ProtectedRoute} from "./ProtectedRoute/ProtectedRoute.tsx";
 
 
@@ -62,3 +62,4 @@ export const router = createBrowserRouter([
         ]
     }
 ])
+
