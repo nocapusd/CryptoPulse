@@ -1,0 +1,21 @@
+.layout {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--cp-color-bg-secondary);
+    padding: var(--cp-space-md);
+}
+
+.card {
+    width: 100%;
+    max-width: var(--cp-auth-card-width);
+    padding: var(--cp-auth-card-padding);
+    border-radius: var(--cp-auth-card-radius);
+    border: var(--cp-auth-card-border);
+    background: var(--cp-auth-card-bg);
+    box-shadow: var(--cp-auth-card-shadow);
+}
+
