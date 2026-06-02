@@ -1,0 +1,38 @@
+.button {
+    height: var(--cp-button-height);
+    padding: var(--cp-button-padding-x);
+
+    border-radius: var(--cp-button-radius);
+    font-size: var(--cp-button-font-size);
+    font-weight: var(--cp-button-font-weight);
+
+    cursor: pointer;
+    transition: 0.2s ease;
+
+    border: none;
+}
+
+.primary {
+    background: var(--cp-button-primary-bg);
+    color: var(--cp-button-primary-text);
+}
+
+.primary:hover {
+    box-shadow: var(--cp-button-primary-shadow-hover);
+}
+
+.ghost {
+    background: var(--cp-button-ghost-bg);
+    color: var(--cp-button-ghost-text);
+    border: var(--cp-button-ghost-border);
+}
+
+.ghost:hover {
+    background: var(--cp-button-ghost-bg-hover);
+    color: var(--cp-button-ghost-text-hover);
+}
+
+.button:disabled {
+    opacity: var(--cp-button-disabled-opacity);
+    cursor: not-allowed;
+}
