@@ -1,11 +1,13 @@
 import styles from "./Button.module.css";
 
-type ButtonProps = {
+type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
     variant?: 'primary' | 'ghost';
 }
-
-export const Button = ({variant = 'primary'}: ButtonProps) => {
+export const Button = ({variant = 'primary', ...props}: ButtonProps) => {
     return (
-        <button className={`${styles.button} ${styles[variant]} ?? ''`}>Click me</button>
+        <button className={`${styles.button} ${styles[variant] ?? ''}`} {...props}>Click me</button>
     );
 };
+
+
+

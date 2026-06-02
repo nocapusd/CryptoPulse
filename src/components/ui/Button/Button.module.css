@@ -24,7 +24,7 @@
 .ghost {
     background: var(--cp-button-ghost-bg);
     color: var(--cp-button-ghost-text);
-    border: var(--cp-button-ghost-border);
+    border-color: var(--cp-button-ghost-border);
 }
 
 .ghost:hover {

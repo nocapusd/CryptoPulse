@@ -1,0 +1,23 @@
+.input {
+    width: 100%;
+    height: var(--cp-input-height);
+
+    background: var(--cp-input-bg);
+    border: 1px solid var(--cp-input-border);
+
+    color: var(--cp-input-text);
+    border-radius: var(--cp-input-radius);
+
+    padding: 0 var(--cp-input-padding-x);
+    font-size: var(--cp-input-font-size);
+
+    outline: none;
+    transition: 0.2s ease;
+}
+.input:focus {
+    border-color: var(--cp-input-border-focus);
+    box-shadow: var(--cp-input-focus-shadow);
+}
+.input::placeholder {
+    color: var(--cp-input-placeholder);
+}
