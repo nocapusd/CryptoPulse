@@ -1,0 +1,105 @@
+.login {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--cp-space-sm-custom);
+    padding-bottom: var(--cp-space-xl-custom);
+    font-size: var(--cp-text-2xl);
+    font-weight: var(--cp-font-weight-bold);
+    background: var(--cp-gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: var(--cp-letter-spacing-title);
+}
+
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--cp-space-sm-custom);
+    padding-bottom: var(--cp-space-2xl-custom);
+}
+
+.hero_title {
+    font-size: var(--cp-text-3xl);
+    font-weight: var(--cp-font-weight-bold);
+    color: var(--cp-color-text-primary);
+    letter-spacing: var(--cp-letter-spacing-title);
+}
+
+.hero_subtitle {
+    font-size: var(--cp-text-sm);
+    font-weight: var(--cp-font-weight-regular);
+    color: var(--cp-color-text-secondary);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--cp-space-lg);
+    padding-bottom: var(--cp-space-md);
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.label_field {
+    font-size: var(--cp-text-sm);
+    color: var(--cp-color-text-secondary);
+    font-weight: var(--cp-font-weight-regular);
+    margin-bottom: var(--cp-space-xs);
+}
+
+.control {
+    position: relative;
+    width: 100%;
+}
+
+.eye_icon {
+    position: absolute;
+    top: 50%;
+    right: 13px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+}
+
+.forgot {
+    font-size: var(--cp-text-sm);
+    font-weight: var(--cp-font-weight-regular);
+    color: var(--cp-color-primary-light);
+    padding-top: var(--cp-space-xs);
+    align-self: flex-end;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    gap: var(--cp-space-xs);
+}
+
+.footer_text {
+    font-size: var(--cp-text-sm);
+    font-weight: var(--cp-font-weight-regular);
+    color: var(--cp-color-text-secondary);
+}
+
+.footer_link {
+    font-size: var(--cp-text-sm);
+    font-weight: var(--cp-font-weight-bold);
+    color: var(--cp-color-primary-light);
+}
+
+.footer_link:hover {
+    color: var(--cp-color-primary);
+}

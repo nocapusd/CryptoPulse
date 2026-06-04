@@ -10,141 +10,144 @@
    ========================================================================== */
 
 :root {
-    /* --------------------------------------------------------------------------
+   /* --------------------------------------------------------------------------
        Typography
        -------------------------------------------------------------------------- */
 
-    --cp-font-sans: Inter,
-    Roboto,
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    sans-serif;
+   --cp-font-sans: Inter,
+      Roboto,
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      sans-serif;
 
-    --cp-font-weight-regular: 400;
-    --cp-font-weight-medium: 500;
-    --cp-font-weight-semibold: 600;
-    --cp-font-weight-bold: 700;
-    --cp-font-weight-extrabold: 800;
+   --cp-font-weight-regular: 400;
+   --cp-font-weight-medium: 500;
+   --cp-font-weight-semibold: 600;
+   --cp-font-weight-bold: 700;
+   --cp-font-weight-extrabold: 800;
 
-    --cp-text-xs: 12px;
-    --cp-text-sm: 14px;
-    --cp-text-base: 16px;
-    --cp-text-lg: 18px;
-    --cp-text-xl: 20px;
-    --cp-text-2xl: 24px;
-    --cp-text-3xl: 30px;
-    --cp-text-4xl: 36px;
+   --cp-text-xs: 12px;
+   --cp-text-sm: 14px;
+   --cp-text-base: 16px;
+   --cp-text-lg: 18px;
+   --cp-text-xl: 20px;
+   --cp-text-2xl: 24px;
+   --cp-text-3xl: 30px;
+   --cp-text-4xl: 36px;
 
-    --cp-line-height-tight: 1.1;
-    --cp-line-height-heading: 1.2;
-    --cp-line-height-base: 1.5;
-    --cp-line-height-relaxed: 1.7;
-    --cp-line-height-body: 1.75;
+   --cp-line-height-tight: 1.1;
+   --cp-line-height-heading: 1.2;
+   --cp-line-height-base: 1.5;
+   --cp-line-height-relaxed: 1.7;
+   --cp-line-height-body: 1.75;
 
-    --cp-letter-spacing-tight: -0.02em;
-    --cp-letter-spacing-title: -0.5px;
-    --cp-letter-spacing-label: 0.06em;
-    --cp-letter-spacing-nav-label: 0.08em;
+   --cp-letter-spacing-tight: -0.02em;
+   --cp-letter-spacing-title: -0.5px;
+   --cp-letter-spacing-label: 0.06em;
+   --cp-letter-spacing-nav-label: 0.08em;
 
-    /* --------------------------------------------------------------------------
+   /* --------------------------------------------------------------------------
        Spacing scale
        Based on desktop prototype spacing.
        -------------------------------------------------------------------------- */
 
-    --cp-space-2xs: 4px;
-    --cp-space-xs: 8px;
-    --cp-space-sm: 12px;
-    --cp-space-md: 16px;
-    --cp-space-lg: 24px;
-    --cp-space-xl: 32px;
-    --cp-space-2xl: 40px;
-    --cp-space-3xl: 48px;
-    --cp-space-4xl: 64px;
+   --cp-space-2xs: 4px;
+   --cp-space-xs: 8px;
+   --cp-space-sm: 12px;
+   --cp-space-sm-custom: 14px;
+   --cp-space-md: 16px;
+   --cp-space-lg: 24px;
+   --cp-space-xl: 32px;
+   --cp-space-xl-custom: 35px;
+   --cp-space-2xl: 40px;
+   --cp-space-2xl-custom: 44px;
+   --cp-space-3xl: 48px;
+   --cp-space-4xl: 64px;
 
-    /* --------------------------------------------------------------------------
+   /* --------------------------------------------------------------------------
        Border radius
        -------------------------------------------------------------------------- */
 
-    --cp-radius-sm: 8px;
-    --cp-radius-md: 12px;
-    --cp-radius-lg: 16px;
-    --cp-radius-xl: 24px;
-    --cp-radius-full: 999px;
+   --cp-radius-sm: 8px;
+   --cp-radius-md: 12px;
+   --cp-radius-lg: 16px;
+   --cp-radius-xl: 24px;
+   --cp-radius-full: 999px;
 
-    /* --------------------------------------------------------------------------
+   /* --------------------------------------------------------------------------
        Layout
        -------------------------------------------------------------------------- */
 
-    --cp-sidebar-width: 260px;
-    --cp-header-height: 72px;
-    --cp-main-padding-desktop: var(--cp-space-xl);
+   --cp-sidebar-width: 260px;
+   --cp-header-height: 72px;
+   --cp-main-padding-desktop: var(--cp-space-xl);
 
-    --cp-auth-card-width: 460px;
-    --cp-error-card-width: 640px;
+   --cp-auth-card-width: 460px;
+   --cp-error-card-width: 640px;
 
-    --cp-container-desktop: 1440px;
-    --cp-container-wide: 1920px;
+   --cp-container-desktop: 1440px;
+   --cp-container-wide: 1920px;
 
-    /* --------------------------------------------------------------------------
+   /* --------------------------------------------------------------------------
        Component sizes
        -------------------------------------------------------------------------- */
 
-    --cp-button-height-md: 44px;
-    --cp-button-height-sm: 36px;
+   --cp-button-height-md: 44px;
+   --cp-button-height-sm: 36px;
 
-    --cp-input-height-md: 44px;
-    --cp-search-height: 40px;
+   --cp-input-height-md: 44px;
+   --cp-search-height: 40px;
 
-    --cp-icon-sm: 14px;
-    --cp-icon-md: 16px;
-    --cp-icon-lg: 18px;
+   --cp-icon-sm: 14px;
+   --cp-icon-md: 16px;
+   --cp-icon-lg: 18px;
 
-    --cp-avatar-sm: 36px;
-    --cp-avatar-md: 40px;
+   --cp-avatar-sm: 36px;
+   --cp-avatar-md: 40px;
 
-    --cp-brand-sidebar-size: 44px;
-    --cp-brand-auth-size: 60px;
+   --cp-brand-sidebar-size: 44px;
+   --cp-brand-auth-size: 60px;
 
-    --cp-coin-icon-sm: 36px;
-    --cp-coin-icon-lg: 56px;
+   --cp-coin-icon-sm: 36px;
+   --cp-coin-icon-lg: 56px;
 
-    /* --------------------------------------------------------------------------
+   /* --------------------------------------------------------------------------
        Table layout
        Dashboard / Watchlist desktop coin table.
        -------------------------------------------------------------------------- */
 
-    --cp-coin-table-grid: 48px minmax(180px, 1fr) minmax(110px, 148px) minmax(110px, 128px) minmax(120px, 148px) minmax(130px, 160px) minmax(80px, 100px) 72px;
+   --cp-coin-table-grid: 48px minmax(180px, 1fr) minmax(110px, 148px) minmax(110px, 128px) minmax(120px, 148px) minmax(130px, 160px) minmax(80px, 100px) 72px;
 
-    /* --------------------------------------------------------------------------
+   /* --------------------------------------------------------------------------
        Motion
        -------------------------------------------------------------------------- */
 
-    --cp-transition-fast: 150ms ease;
-    --cp-transition-base: 200ms ease;
-    --cp-transition-slow: 300ms ease;
+   --cp-transition-fast: 150ms ease;
+   --cp-transition-base: 200ms ease;
+   --cp-transition-slow: 300ms ease;
 
-    /* --------------------------------------------------------------------------
+   /* --------------------------------------------------------------------------
        Z-index
        -------------------------------------------------------------------------- */
 
-    --cp-z-base: 1;
-    --cp-z-header: 10;
-    --cp-z-sidebar: 20;
-    --cp-z-dropdown: 50;
-    --cp-z-modal: 100;
+   --cp-z-base: 1;
+   --cp-z-header: 10;
+   --cp-z-sidebar: 20;
+   --cp-z-dropdown: 50;
+   --cp-z-modal: 100;
 
-    /* --------------------------------------------------------------------------
+   /* --------------------------------------------------------------------------
        Breakpoints
        Mobile system will be designed next, but we define tokens now.
        -------------------------------------------------------------------------- */
 
-    --cp-breakpoint-sm: 480px;
-    --cp-breakpoint-md: 768px;
-    --cp-breakpoint-lg: 1024px;
-    --cp-breakpoint-xl: 1280px;
-    --cp-breakpoint-2xl: 1536px;
+   --cp-breakpoint-sm: 480px;
+   --cp-breakpoint-md: 768px;
+   --cp-breakpoint-lg: 1024px;
+   --cp-breakpoint-xl: 1280px;
+   --cp-breakpoint-2xl: 1536px;
 }
 
 /* ==========================================================================
@@ -154,100 +157,98 @@
 
 :root,
 [data-theme="dark"] {
-    color-scheme: dark;
+   color-scheme: dark;
 
-    /* --------------------------------------------------------------------------
+   /* --------------------------------------------------------------------------
        Background
        -------------------------------------------------------------------------- */
 
-    --cp-color-bg-primary: #07070f;
-    --cp-color-bg-secondary: #0d0b1e;
+   --cp-color-bg-primary: #07070f;
+   --cp-color-bg-secondary: #0d0b1e;
 
-    --cp-bg-app: radial-gradient(circle at top left, rgba(139, 92, 246, 0.18), transparent 32%),
-    radial-gradient(circle at top right, rgba(99, 102, 241, 0.14), transparent 30%),
-    linear-gradient(135deg, #07070f 0%, #0d0b1e 100%);
+   --cp-bg-app: radial-gradient(circle at top left, rgba(139, 92, 246, 0.18), transparent 32%),
+      radial-gradient(circle at top right, rgba(99, 102, 241, 0.14), transparent 30%),
+      linear-gradient(135deg, #07070f 0%, #0d0b1e 100%);
 
-    /* --------------------------------------------------------------------------
+   /* --------------------------------------------------------------------------
        Surfaces
        -------------------------------------------------------------------------- */
 
-    --cp-color-surface-glass: rgba(255, 255, 255, 0.04);
-    --cp-color-surface-glass-strong: rgba(255, 255, 255, 0.07);
-    --cp-color-surface-border: rgba(255, 255, 255, 0.08);
+   --cp-color-surface-glass: rgba(255, 255, 255, 0.04);
+   --cp-color-surface-glass-strong: rgba(255, 255, 255, 0.07);
+   --cp-color-surface-border: rgba(255, 255, 255, 0.08);
 
-    --cp-color-surface-hover: rgba(255, 255, 255, 0.08);
-    --cp-color-surface-row-hover: rgba(255, 255, 255, 0.03);
-    --cp-color-surface-input: rgba(255, 255, 255, 0.04);
-    --cp-color-surface-icon: rgba(139, 92, 246, 0.12);
+   --cp-color-surface-hover: rgba(255, 255, 255, 0.08);
+   --cp-color-surface-row-hover: rgba(255, 255, 255, 0.03);
+   --cp-color-surface-input: rgba(255, 255, 255, 0.04);
+   --cp-color-surface-icon: rgba(139, 92, 246, 0.12);
 
-    /* --------------------------------------------------------------------------
+   /* --------------------------------------------------------------------------
        Brand
        -------------------------------------------------------------------------- */
 
-    --cp-color-primary: #8b5cf6;
-    --cp-color-primary-light: #a78bfa;
-    --cp-color-primary-dark: #6366f1;
+   --cp-color-primary: #8b5cf6;
+   --cp-color-primary-light: #a78bfa;
+   --cp-color-primary-dark: #6366f1;
 
-    --cp-gradient-primary: linear-gradient(
-            135deg,
-            #6366f1 0%,
-            #8b5cf6 50%,
-            #a855f7 100%
-    );
+   --cp-gradient-primary: linear-gradient(135deg,
+         #6366f1 0%,
+         #8b5cf6 50%,
+         #a855f7 100%);
 
-    /* --------------------------------------------------------------------------
+   /* --------------------------------------------------------------------------
        Text
        -------------------------------------------------------------------------- */
 
-    --cp-color-text-primary: #f1f5f9;
-    --cp-color-text-secondary: #94a3b8;
-    --cp-color-text-muted: #64748b;
-    --cp-color-text-inverse: #ffffff;
+   --cp-color-text-primary: #f1f5f9;
+   --cp-color-text-secondary: #94a3b8;
+   --cp-color-text-muted: #64748b;
+   --cp-color-text-inverse: #ffffff;
 
-    /* --------------------------------------------------------------------------
+   /* --------------------------------------------------------------------------
        Status colors
        -------------------------------------------------------------------------- */
 
-    --cp-color-success: #10b981;
-    --cp-color-danger: #f43f5e;
-    --cp-color-warning: #f59e0b;
+   --cp-color-success: #10b981;
+   --cp-color-danger: #f43f5e;
+   --cp-color-warning: #f59e0b;
 
-    --cp-color-success-bg: rgba(16, 185, 129, 0.12);
-    --cp-color-danger-bg: rgba(244, 63, 94, 0.12);
-    --cp-color-warning-bg: rgba(245, 158, 11, 0.12);
+   --cp-color-success-bg: rgba(16, 185, 129, 0.12);
+   --cp-color-danger-bg: rgba(244, 63, 94, 0.12);
+   --cp-color-warning-bg: rgba(245, 158, 11, 0.12);
 
-    /* --------------------------------------------------------------------------
+   /* --------------------------------------------------------------------------
        Glow / shadow
        -------------------------------------------------------------------------- */
 
-    --cp-glow-soft: 0 0 16px rgba(139, 92, 246, 0.25);
-    --cp-glow-primary: 0 0 32px rgba(139, 92, 246, 0.45);
-    --cp-glow-strong: 0 0 48px rgba(139, 92, 246, 0.6);
+   --cp-glow-soft: 0 0 16px rgba(139, 92, 246, 0.25);
+   --cp-glow-primary: 0 0 32px rgba(139, 92, 246, 0.45);
+   --cp-glow-strong: 0 0 48px rgba(139, 92, 246, 0.6);
 
-    --cp-shadow-card: 0 24px 80px rgba(0, 0, 0, 0.35);
-    --cp-shadow-glow: 0 0 32px rgba(139, 92, 246, 0.45);
+   --cp-shadow-card: 0 24px 80px rgba(0, 0, 0, 0.35);
+   --cp-shadow-glow: 0 0 32px rgba(139, 92, 246, 0.45);
 
-    --cp-shadow-auth-card: 0 24px 80px rgba(0, 0, 0, 0.35),
-    0 0 0 1px rgba(139, 92, 246, 0.06),
-    0 0 60px rgba(139, 92, 246, 0.08);
+   --cp-shadow-auth-card: 0 24px 80px rgba(0, 0, 0, 0.35),
+      0 0 0 1px rgba(139, 92, 246, 0.06),
+      0 0 60px rgba(139, 92, 246, 0.08);
 
-    --cp-shadow-error-glow: 0 0 0 1px rgba(244, 63, 94, 0.2);
+   --cp-shadow-error-glow: 0 0 0 1px rgba(244, 63, 94, 0.2);
 
-    /* --------------------------------------------------------------------------
+   /* --------------------------------------------------------------------------
        Chart / data visualization
        -------------------------------------------------------------------------- */
 
-    --cp-chart-grid-line: rgba(255, 255, 255, 0.05);
-    --cp-chart-fill-purple: rgba(139, 92, 246, 0.3);
-    --cp-chart-fill-purple-end: rgba(139, 92, 246, 0);
+   --cp-chart-grid-line: rgba(255, 255, 255, 0.05);
+   --cp-chart-fill-purple: rgba(139, 92, 246, 0.3);
+   --cp-chart-fill-purple-end: rgba(139, 92, 246, 0);
 
-    /* --------------------------------------------------------------------------
+   /* --------------------------------------------------------------------------
        Decorative blobs
        -------------------------------------------------------------------------- */
 
-    --cp-blob-primary: rgba(139, 92, 246, 0.14);
-    --cp-blob-secondary: rgba(99, 102, 241, 0.1);
-    --cp-blob-accent: rgba(168, 85, 247, 0.08);
+   --cp-blob-primary: rgba(139, 92, 246, 0.14);
+   --cp-blob-secondary: rgba(99, 102, 241, 0.1);
+   --cp-blob-accent: rgba(168, 85, 247, 0.08);
 }
 
 /* ==========================================================================
@@ -256,100 +257,98 @@
    ========================================================================== */
 
 [data-theme="light"] {
-    color-scheme: light;
+   color-scheme: light;
 
-    /* --------------------------------------------------------------------------
+   /* --------------------------------------------------------------------------
        Background
        -------------------------------------------------------------------------- */
 
-    --cp-color-bg-primary: #f8f7ff;
-    --cp-color-bg-secondary: #eef2ff;
+   --cp-color-bg-primary: #f8f7ff;
+   --cp-color-bg-secondary: #eef2ff;
 
-    --cp-bg-app: radial-gradient(circle at top left, rgba(124, 58, 237, 0.13), transparent 34%),
-    radial-gradient(circle at top right, rgba(79, 70, 229, 0.1), transparent 32%),
-    linear-gradient(135deg, #f8f7ff 0%, #eef2ff 100%);
+   --cp-bg-app: radial-gradient(circle at top left, rgba(124, 58, 237, 0.13), transparent 34%),
+      radial-gradient(circle at top right, rgba(79, 70, 229, 0.1), transparent 32%),
+      linear-gradient(135deg, #f8f7ff 0%, #eef2ff 100%);
 
-    /* --------------------------------------------------------------------------
+   /* --------------------------------------------------------------------------
        Surfaces
        -------------------------------------------------------------------------- */
 
-    --cp-color-surface-glass: rgba(255, 255, 255, 0.72);
-    --cp-color-surface-glass-strong: rgba(255, 255, 255, 0.88);
-    --cp-color-surface-border: rgba(99, 102, 241, 0.14);
+   --cp-color-surface-glass: rgba(255, 255, 255, 0.72);
+   --cp-color-surface-glass-strong: rgba(255, 255, 255, 0.88);
+   --cp-color-surface-border: rgba(99, 102, 241, 0.14);
 
-    --cp-color-surface-hover: rgba(99, 102, 241, 0.08);
-    --cp-color-surface-row-hover: rgba(99, 102, 241, 0.04);
-    --cp-color-surface-input: rgba(99, 102, 241, 0.05);
-    --cp-color-surface-icon: rgba(124, 58, 237, 0.1);
+   --cp-color-surface-hover: rgba(99, 102, 241, 0.08);
+   --cp-color-surface-row-hover: rgba(99, 102, 241, 0.04);
+   --cp-color-surface-input: rgba(99, 102, 241, 0.05);
+   --cp-color-surface-icon: rgba(124, 58, 237, 0.1);
 
-    /* --------------------------------------------------------------------------
+   /* --------------------------------------------------------------------------
        Brand
        -------------------------------------------------------------------------- */
 
-    --cp-color-primary: #7c3aed;
-    --cp-color-primary-light: #8b5cf6;
-    --cp-color-primary-dark: #5b21b6;
+   --cp-color-primary: #7c3aed;
+   --cp-color-primary-light: #8b5cf6;
+   --cp-color-primary-dark: #5b21b6;
 
-    --cp-gradient-primary: linear-gradient(
-            135deg,
-            #4f46e5 0%,
-            #7c3aed 50%,
-            #9333ea 100%
-    );
+   --cp-gradient-primary: linear-gradient(135deg,
+         #4f46e5 0%,
+         #7c3aed 50%,
+         #9333ea 100%);
 
-    /* --------------------------------------------------------------------------
+   /* --------------------------------------------------------------------------
        Text
        -------------------------------------------------------------------------- */
 
-    --cp-color-text-primary: #111827;
-    --cp-color-text-secondary: #475569;
-    --cp-color-text-muted: #64748b;
-    --cp-color-text-inverse: #ffffff;
+   --cp-color-text-primary: #111827;
+   --cp-color-text-secondary: #475569;
+   --cp-color-text-muted: #64748b;
+   --cp-color-text-inverse: #ffffff;
 
-    /* --------------------------------------------------------------------------
+   /* --------------------------------------------------------------------------
        Status colors
        -------------------------------------------------------------------------- */
 
-    --cp-color-success: #059669;
-    --cp-color-danger: #e11d48;
-    --cp-color-warning: #d97706;
+   --cp-color-success: #059669;
+   --cp-color-danger: #e11d48;
+   --cp-color-warning: #d97706;
 
-    --cp-color-success-bg: rgba(5, 150, 105, 0.12);
-    --cp-color-danger-bg: rgba(225, 29, 72, 0.12);
-    --cp-color-warning-bg: rgba(217, 119, 6, 0.12);
+   --cp-color-success-bg: rgba(5, 150, 105, 0.12);
+   --cp-color-danger-bg: rgba(225, 29, 72, 0.12);
+   --cp-color-warning-bg: rgba(217, 119, 6, 0.12);
 
-    /* --------------------------------------------------------------------------
+   /* --------------------------------------------------------------------------
        Glow / shadow
        -------------------------------------------------------------------------- */
 
-    --cp-glow-soft: 0 0 16px rgba(124, 58, 237, 0.16);
-    --cp-glow-primary: 0 0 28px rgba(124, 58, 237, 0.24);
-    --cp-glow-strong: 0 0 40px rgba(124, 58, 237, 0.32);
+   --cp-glow-soft: 0 0 16px rgba(124, 58, 237, 0.16);
+   --cp-glow-primary: 0 0 28px rgba(124, 58, 237, 0.24);
+   --cp-glow-strong: 0 0 40px rgba(124, 58, 237, 0.32);
 
-    --cp-shadow-card: 0 24px 80px rgba(79, 70, 229, 0.12);
-    --cp-shadow-glow: 0 0 28px rgba(124, 58, 237, 0.24);
+   --cp-shadow-card: 0 24px 80px rgba(79, 70, 229, 0.12);
+   --cp-shadow-glow: 0 0 28px rgba(124, 58, 237, 0.24);
 
-    --cp-shadow-auth-card: 0 24px 80px rgba(79, 70, 229, 0.12),
-    0 0 0 1px rgba(124, 58, 237, 0.08),
-    0 0 60px rgba(124, 58, 237, 0.07);
+   --cp-shadow-auth-card: 0 24px 80px rgba(79, 70, 229, 0.12),
+      0 0 0 1px rgba(124, 58, 237, 0.08),
+      0 0 60px rgba(124, 58, 237, 0.07);
 
-    --cp-shadow-error-glow: 0 0 0 1px rgba(225, 29, 72, 0.2);
+   --cp-shadow-error-glow: 0 0 0 1px rgba(225, 29, 72, 0.2);
 
-    /* --------------------------------------------------------------------------
+   /* --------------------------------------------------------------------------
        Chart / data visualization
        -------------------------------------------------------------------------- */
 
-    --cp-chart-grid-line: rgba(99, 102, 241, 0.1);
-    --cp-chart-fill-purple: rgba(139, 92, 246, 0.3);
-    --cp-chart-fill-purple-end: rgba(139, 92, 246, 0);
+   --cp-chart-grid-line: rgba(99, 102, 241, 0.1);
+   --cp-chart-fill-purple: rgba(139, 92, 246, 0.3);
+   --cp-chart-fill-purple-end: rgba(139, 92, 246, 0);
 
-    /* --------------------------------------------------------------------------
+   /* --------------------------------------------------------------------------
        Decorative blobs
        -------------------------------------------------------------------------- */
 
-    --cp-blob-primary: rgba(124, 58, 237, 0.1);
-    --cp-blob-secondary: rgba(79, 70, 229, 0.08);
-    --cp-blob-accent: rgba(147, 51, 234, 0.07);
+   --cp-blob-primary: rgba(124, 58, 237, 0.1);
+   --cp-blob-secondary: rgba(79, 70, 229, 0.08);
+   --cp-blob-accent: rgba(147, 51, 234, 0.07);
 }
 
 /* ==========================================================================
@@ -361,182 +360,187 @@
 :root,
 [data-theme="dark"],
 [data-theme="light"] {
-    /* --------------------------------------------------------------------------
+   /* --------------------------------------------------------------------------
        Body
        -------------------------------------------------------------------------- */
 
-    --cp-body-font-family: var(--cp-font-sans);
-    --cp-body-font-size: var(--cp-text-base);
-    --cp-body-text-color: var(--cp-color-text-primary);
-    --cp-body-background: var(--cp-bg-app);
+   --cp-body-font-family: var(--cp-font-sans);
+   --cp-body-font-size: var(--cp-text-base);
+   --cp-body-text-color: var(--cp-color-text-primary);
+   --cp-body-background: var(--cp-bg-app);
 
-    /* --------------------------------------------------------------------------
+   /* --------------------------------------------------------------------------
        App shell
        -------------------------------------------------------------------------- */
 
-    --cp-app-sidebar-width: var(--cp-sidebar-width);
-    --cp-app-header-height: var(--cp-header-height);
-    --cp-app-main-padding: var(--cp-main-padding-desktop);
+   --cp-app-sidebar-width: var(--cp-sidebar-width);
+   --cp-app-header-height: var(--cp-header-height);
+   --cp-app-main-padding: var(--cp-main-padding-desktop);
 
-    --cp-sidebar-bg: var(--cp-color-surface-glass);
-    --cp-sidebar-border: var(--cp-color-surface-border);
+   --cp-sidebar-bg: var(--cp-color-surface-glass);
+   --cp-sidebar-border: var(--cp-color-surface-border);
 
-    --cp-header-bg: var(--cp-color-surface-glass);
-    --cp-header-border: var(--cp-color-surface-border);
+   --cp-header-bg: var(--cp-color-surface-glass);
+   --cp-header-border: var(--cp-color-surface-border);
 
-    /* --------------------------------------------------------------------------
+   /* --------------------------------------------------------------------------
        Cards / glass panels
        -------------------------------------------------------------------------- */
 
-    --cp-card-bg: var(--cp-color-surface-glass);
-    --cp-card-bg-strong: var(--cp-color-surface-glass-strong);
-    --cp-card-border: var(--cp-color-surface-border);
-    --cp-card-radius: var(--cp-radius-lg);
-    --cp-card-padding: var(--cp-space-lg);
-    --cp-card-shadow: var(--cp-shadow-card);
-    --cp-card-backdrop-blur: 24px;
+   --cp-card-bg: var(--cp-color-surface-glass);
+   --cp-card-bg-strong: var(--cp-color-surface-glass-strong);
+   --cp-card-border: var(--cp-color-surface-border);
+   --cp-card-radius: var(--cp-radius-lg);
+   --cp-card-padding: var(--cp-space-lg);
+   --cp-card-shadow: var(--cp-shadow-card);
+   --cp-card-backdrop-blur: 24px;
 
-    --cp-auth-card-bg: var(--cp-color-surface-glass);
-    --cp-auth-card-border: var(--cp-color-surface-border);
-    --cp-auth-card-radius: var(--cp-radius-xl);
-    --cp-auth-card-padding: var(--cp-space-2xl);
-    --cp-auth-card-shadow: var(--cp-shadow-auth-card);
+   --cp-auth-card-bg: var(--cp-color-surface-glass);
+   --cp-auth-card-border: var(--cp-color-surface-border);
+   --cp-auth-card-border-color: rgba(255, 255, 255, 0.12);
+   --cp-auth-card-border-width: 1px;
+   /* опционально, ближе к Figma cyan glow: */
+   --cp-auth-card-border-glow: 0 0 0 1px rgba(99, 102, 241, 0.35),
+      0 0 24px rgba(139, 92, 246, 0.15);
+   --cp-auth-card-radius: var(--cp-radius-xl);
+   --cp-auth-card-padding: var(--cp-space-2xl);
+   --cp-auth-card-shadow: var(--cp-shadow-auth-card);
 
-    /* --------------------------------------------------------------------------
+   /* --------------------------------------------------------------------------
        Buttons
        -------------------------------------------------------------------------- */
 
-    --cp-button-height: var(--cp-button-height-md);
-    --cp-button-height-small: var(--cp-button-height-sm);
+   --cp-button-height: var(--cp-button-height-md);
+   --cp-button-height-small: var(--cp-button-height-sm);
 
-    --cp-button-padding-x: var(--cp-space-lg);
-    --cp-button-padding-x-small: var(--cp-space-md);
+   --cp-button-padding-x: var(--cp-space-lg);
+   --cp-button-padding-x-small: var(--cp-space-md);
 
-    --cp-button-radius: var(--cp-radius-md);
-    --cp-button-font-size: var(--cp-text-sm);
-    --cp-button-font-size-small: var(--cp-text-xs);
-    --cp-button-font-weight: var(--cp-font-weight-semibold);
+   --cp-button-radius: var(--cp-radius-md);
+   --cp-button-font-size: var(--cp-text-sm);
+   --cp-button-font-size-small: var(--cp-text-xs);
+   --cp-button-font-weight: var(--cp-font-weight-bold);
 
-    --cp-button-primary-bg: var(--cp-gradient-primary);
-    --cp-button-primary-text: var(--cp-color-text-inverse);
-    --cp-button-primary-shadow-hover: var(--cp-glow-primary);
+   --cp-button-primary-bg: var(--cp-gradient-primary);
+   --cp-button-primary-text: var(--cp-color-text-inverse);
+   --cp-button-primary-shadow-hover: var(--cp-glow-primary);
 
-    --cp-button-ghost-bg: var(--cp-color-surface-glass-strong);
-    --cp-button-ghost-border: var(--cp-color-surface-border);
-    --cp-button-ghost-text: var(--cp-color-text-secondary);
-    --cp-button-ghost-bg-hover: var(--cp-color-surface-hover);
-    --cp-button-ghost-text-hover: var(--cp-color-text-primary);
+   --cp-button-ghost-bg: var(--cp-color-surface-glass-strong);
+   --cp-button-ghost-border: var(--cp-color-surface-border);
+   --cp-button-ghost-text: var(--cp-color-text-secondary);
+   --cp-button-ghost-bg-hover: var(--cp-color-surface-hover);
+   --cp-button-ghost-text-hover: var(--cp-color-text-primary);
 
-    --cp-button-disabled-opacity: 0.45;
+   --cp-button-disabled-opacity: 0.45;
 
-    /* --------------------------------------------------------------------------
+   /* --------------------------------------------------------------------------
        Inputs
        -------------------------------------------------------------------------- */
 
-    --cp-input-height: var(--cp-input-height-md);
-    --cp-input-bg: var(--cp-color-surface-input);
-    --cp-input-border: var(--cp-color-surface-border);
-    --cp-input-border-focus: var(--cp-color-primary);
-    --cp-input-text: var(--cp-color-text-primary);
-    --cp-input-placeholder: var(--cp-color-text-muted);
-    --cp-input-radius: var(--cp-radius-md);
-    --cp-input-padding-x: var(--cp-space-md);
-    --cp-input-font-size: var(--cp-text-sm);
-    --cp-input-focus-shadow: var(--cp-glow-soft);
+   --cp-input-height: var(--cp-input-height-md);
+   --cp-input-bg: var(--cp-color-surface-input);
+   --cp-input-border: var(--cp-color-surface-border);
+   --cp-input-border-focus: var(--cp-color-primary);
+   --cp-input-text: var(--cp-color-text-primary);
+   --cp-input-placeholder: var(--cp-color-text-muted);
+   --cp-input-radius: var(--cp-radius-md);
+   --cp-input-padding-x: var(--cp-space-md);
+   --cp-input-font-size: var(--cp-text-sm);
+   --cp-input-focus-shadow: var(--cp-glow-soft);
 
-    --cp-input-error-border: var(--cp-color-danger);
-    --cp-input-error-shadow: var(--cp-shadow-error-glow);
+   --cp-input-error-border: var(--cp-color-danger);
+   --cp-input-error-shadow: var(--cp-shadow-error-glow);
 
-    /* --------------------------------------------------------------------------
+   /* --------------------------------------------------------------------------
        Forms / auth validation
        -------------------------------------------------------------------------- */
 
-    --cp-form-label-size: 13px;
-    --cp-form-label-weight: var(--cp-font-weight-medium);
-    --cp-form-label-color: var(--cp-color-text-secondary);
+   --cp-form-label-size: 13px;
+   --cp-form-label-weight: var(--cp-font-weight-medium);
+   --cp-form-label-color: var(--cp-color-text-secondary);
 
-    --cp-form-helper-size: var(--cp-text-xs);
-    --cp-form-helper-color: var(--cp-color-text-muted);
+   --cp-form-helper-size: var(--cp-text-xs);
+   --cp-form-helper-color: var(--cp-color-text-muted);
 
-    --cp-form-error-size: var(--cp-text-xs);
-    --cp-form-error-color: var(--cp-color-danger);
+   --cp-form-error-size: var(--cp-text-xs);
+   --cp-form-error-color: var(--cp-color-danger);
 
-    /* --------------------------------------------------------------------------
+   /* --------------------------------------------------------------------------
        Navigation
        -------------------------------------------------------------------------- */
 
-    --cp-nav-item-height: auto;
-    --cp-nav-item-padding: var(--cp-space-sm);
-    --cp-nav-item-gap: var(--cp-space-sm);
-    --cp-nav-item-radius: var(--cp-radius-md);
+   --cp-nav-item-height: auto;
+   --cp-nav-item-padding: var(--cp-space-sm);
+   --cp-nav-item-gap: var(--cp-space-sm);
+   --cp-nav-item-radius: var(--cp-radius-md);
 
-    --cp-nav-item-text: var(--cp-color-text-secondary);
-    --cp-nav-item-text-hover: var(--cp-color-text-primary);
-    --cp-nav-item-bg-hover: var(--cp-color-surface-glass-strong);
+   --cp-nav-item-text: var(--cp-color-text-secondary);
+   --cp-nav-item-text-hover: var(--cp-color-text-primary);
+   --cp-nav-item-bg-hover: var(--cp-color-surface-glass-strong);
 
-    --cp-nav-item-active-bg: var(--cp-gradient-primary);
-    --cp-nav-item-active-text: var(--cp-color-text-inverse);
-    --cp-nav-item-active-shadow: var(--cp-glow-soft);
+   --cp-nav-item-active-bg: var(--cp-gradient-primary);
+   --cp-nav-item-active-text: var(--cp-color-text-inverse);
+   --cp-nav-item-active-shadow: var(--cp-glow-soft);
 
-    --cp-nav-section-label-size: var(--cp-text-xs);
-    --cp-nav-section-label-color: var(--cp-color-text-muted);
-    --cp-nav-section-label-spacing: var(--cp-letter-spacing-nav-label);
+   --cp-nav-section-label-size: var(--cp-text-xs);
+   --cp-nav-section-label-color: var(--cp-color-text-muted);
+   --cp-nav-section-label-spacing: var(--cp-letter-spacing-nav-label);
 
-    /* --------------------------------------------------------------------------
+   /* --------------------------------------------------------------------------
        Badges
        -------------------------------------------------------------------------- */
 
-    --cp-badge-radius: var(--cp-radius-full);
-    --cp-badge-padding-y: var(--cp-space-2xs);
-    --cp-badge-padding-x: var(--cp-space-xs);
-    --cp-badge-font-size: var(--cp-text-xs);
-    --cp-badge-font-weight: var(--cp-font-weight-semibold);
+   --cp-badge-radius: var(--cp-radius-full);
+   --cp-badge-padding-y: var(--cp-space-2xs);
+   --cp-badge-padding-x: var(--cp-space-xs);
+   --cp-badge-font-size: var(--cp-text-xs);
+   --cp-badge-font-weight: var(--cp-font-weight-semibold);
 
-    --cp-badge-success-bg: var(--cp-color-success-bg);
-    --cp-badge-success-text: var(--cp-color-success);
+   --cp-badge-success-bg: var(--cp-color-success-bg);
+   --cp-badge-success-text: var(--cp-color-success);
 
-    --cp-badge-danger-bg: var(--cp-color-danger-bg);
-    --cp-badge-danger-text: var(--cp-color-danger);
+   --cp-badge-danger-bg: var(--cp-color-danger-bg);
+   --cp-badge-danger-text: var(--cp-color-danger);
 
-    --cp-badge-rank-bg: var(--cp-color-surface-icon);
-    --cp-badge-rank-text: var(--cp-color-primary-light);
+   --cp-badge-rank-bg: var(--cp-color-surface-icon);
+   --cp-badge-rank-text: var(--cp-color-primary-light);
 
-    /* --------------------------------------------------------------------------
+   /* --------------------------------------------------------------------------
        Tables
        -------------------------------------------------------------------------- */
 
-    --cp-table-bg: var(--cp-color-surface-glass);
-    --cp-table-border: var(--cp-color-surface-border);
-    --cp-table-radius: var(--cp-radius-lg);
+   --cp-table-bg: var(--cp-color-surface-glass);
+   --cp-table-border: var(--cp-color-surface-border);
+   --cp-table-radius: var(--cp-radius-lg);
 
-    --cp-table-head-padding-y: var(--cp-space-md);
-    --cp-table-head-padding-x: var(--cp-space-lg);
+   --cp-table-head-padding-y: var(--cp-space-md);
+   --cp-table-head-padding-x: var(--cp-space-lg);
 
-    --cp-table-row-padding-y: var(--cp-space-md);
-    --cp-table-row-padding-x: var(--cp-space-lg);
-    --cp-table-row-border: var(--cp-color-surface-border);
-    --cp-table-row-hover-bg: var(--cp-color-surface-row-hover);
+   --cp-table-row-padding-y: var(--cp-space-md);
+   --cp-table-row-padding-x: var(--cp-space-lg);
+   --cp-table-row-border: var(--cp-color-surface-border);
+   --cp-table-row-hover-bg: var(--cp-color-surface-row-hover);
 
-    --cp-table-head-text-size: var(--cp-text-xs);
-    --cp-table-head-text-color: var(--cp-color-text-muted);
-    --cp-table-head-letter-spacing: var(--cp-letter-spacing-label);
+   --cp-table-head-text-size: var(--cp-text-xs);
+   --cp-table-head-text-color: var(--cp-color-text-muted);
+   --cp-table-head-letter-spacing: var(--cp-letter-spacing-label);
 
-    /* --------------------------------------------------------------------------
+   /* --------------------------------------------------------------------------
        Logo
        -------------------------------------------------------------------------- */
 
-    --cp-logo-sidebar-size: var(--cp-brand-sidebar-size);
-    --cp-logo-auth-size: var(--cp-brand-auth-size);
-    --cp-logo-filter-shadow: drop-shadow(var(--cp-glow-soft));
+   --cp-logo-sidebar-size: var(--cp-brand-sidebar-size);
+   --cp-logo-auth-size: var(--cp-brand-auth-size);
+   --cp-logo-filter-shadow: drop-shadow(var(--cp-glow-soft));
 
-    /* --------------------------------------------------------------------------
+   /* --------------------------------------------------------------------------
        404 / error page
        -------------------------------------------------------------------------- */
 
-    --cp-error-code-width: 420px;
-    --cp-error-code-height: 140px;
-    --cp-error-code-fill-dark: #8b5cf6;
-    --cp-error-code-fill-light: #7c3aed;
+   --cp-error-code-width: 420px;
+   --cp-error-code-height: 140px;
+   --cp-error-code-fill-dark: #8b5cf6;
+   --cp-error-code-fill-light: #7c3aed;
 }
 
 /* ==========================================================================
@@ -547,35 +551,35 @@
    ========================================================================== */
 
 :root {
-    --cp-coin-btc-start: #f7931a;
-    --cp-coin-btc-end: #fbad41;
+   --cp-coin-btc-start: #f7931a;
+   --cp-coin-btc-end: #fbad41;
 
-    --cp-coin-eth-start: #627eea;
-    --cp-coin-eth-end: #8b9ff8;
+   --cp-coin-eth-start: #627eea;
+   --cp-coin-eth-end: #8b9ff8;
 
-    --cp-coin-bnb-start: #f3ba2f;
-    --cp-coin-bnb-end: #f7d060;
+   --cp-coin-bnb-start: #f3ba2f;
+   --cp-coin-bnb-end: #f7d060;
 
-    --cp-coin-sol-start: #9945ff;
-    --cp-coin-sol-end: #14f195;
+   --cp-coin-sol-start: #9945ff;
+   --cp-coin-sol-end: #14f195;
 
-    --cp-coin-xrp-start: #346aa9;
-    --cp-coin-xrp-end: #5b9bd5;
+   --cp-coin-xrp-start: #346aa9;
+   --cp-coin-xrp-end: #5b9bd5;
 
-    --cp-coin-ada-start: #0d1e4c;
-    --cp-coin-ada-end: #3468d1;
+   --cp-coin-ada-start: #0d1e4c;
+   --cp-coin-ada-end: #3468d1;
 
-    --cp-coin-doge-start: #c2a633;
-    --cp-coin-doge-end: #e6c94e;
+   --cp-coin-doge-start: #c2a633;
+   --cp-coin-doge-end: #e6c94e;
 
-    --cp-coin-avax-start: #e84142;
-    --cp-coin-avax-end: #ff7070;
+   --cp-coin-avax-start: #e84142;
+   --cp-coin-avax-end: #ff7070;
 
-    --cp-coin-dot-start: #e6007a;
-    --cp-coin-dot-end: #ff4db8;
+   --cp-coin-dot-start: #e6007a;
+   --cp-coin-dot-end: #ff4db8;
 
-    --cp-coin-matic-start: #8247e5;
-    --cp-coin-matic-end: #a96ffa;
+   --cp-coin-matic-start: #8247e5;
+   --cp-coin-matic-end: #a96ffa;
 }
 
 /* ==========================================================================
@@ -588,56 +592,56 @@
 :root,
 [data-theme="dark"],
 [data-theme="light"] {
-    --color-bg-primary: var(--cp-color-bg-primary);
-    --color-bg-secondary: var(--cp-color-bg-secondary);
+   --color-bg-primary: var(--cp-color-bg-primary);
+   --color-bg-secondary: var(--cp-color-bg-secondary);
 
-    --color-surface-glass: var(--cp-color-surface-glass);
-    --color-surface-glass-strong: var(--cp-color-surface-glass-strong);
-    --color-surface-border: var(--cp-color-surface-border);
+   --color-surface-glass: var(--cp-color-surface-glass);
+   --color-surface-glass-strong: var(--cp-color-surface-glass-strong);
+   --color-surface-border: var(--cp-color-surface-border);
 
-    --color-primary: var(--cp-color-primary);
-    --color-primary-light: var(--cp-color-primary-light);
-    --color-primary-dark: var(--cp-color-primary-dark);
+   --color-primary: var(--cp-color-primary);
+   --color-primary-light: var(--cp-color-primary-light);
+   --color-primary-dark: var(--cp-color-primary-dark);
 
-    --color-text-primary: var(--cp-color-text-primary);
-    --color-text-secondary: var(--cp-color-text-secondary);
-    --color-text-muted: var(--cp-color-text-muted);
+   --color-text-primary: var(--cp-color-text-primary);
+   --color-text-secondary: var(--cp-color-text-secondary);
+   --color-text-muted: var(--cp-color-text-muted);
 
-    --color-success: var(--cp-color-success);
-    --color-danger: var(--cp-color-danger);
-    --color-warning: var(--cp-color-warning);
+   --color-success: var(--cp-color-success);
+   --color-danger: var(--cp-color-danger);
+   --color-warning: var(--cp-color-warning);
 
-    --gradient-primary: var(--cp-gradient-primary);
+   --gradient-primary: var(--cp-gradient-primary);
 
-    --glow-soft: var(--cp-glow-soft);
-    --glow-primary: var(--cp-glow-primary);
-    --glow-strong: var(--cp-glow-strong);
+   --glow-soft: var(--cp-glow-soft);
+   --glow-primary: var(--cp-glow-primary);
+   --glow-strong: var(--cp-glow-strong);
 
-    --shadow-card: var(--cp-shadow-card);
-    --shadow-glow: var(--cp-shadow-glow);
+   --shadow-card: var(--cp-shadow-card);
+   --shadow-glow: var(--cp-shadow-glow);
 
-    --space-2xs: var(--cp-space-2xs);
-    --space-xs: var(--cp-space-xs);
-    --space-sm: var(--cp-space-sm);
-    --space-md: var(--cp-space-md);
-    --space-lg: var(--cp-space-lg);
-    --space-xl: var(--cp-space-xl);
-    --space-2xl: var(--cp-space-2xl);
-    --space-3xl: var(--cp-space-3xl);
-    --space-4xl: var(--cp-space-4xl);
+   --space-2xs: var(--cp-space-2xs);
+   --space-xs: var(--cp-space-xs);
+   --space-sm: var(--cp-space-sm);
+   --space-md: var(--cp-space-md);
+   --space-lg: var(--cp-space-lg);
+   --space-xl: var(--cp-space-xl);
+   --space-2xl: var(--cp-space-2xl);
+   --space-3xl: var(--cp-space-3xl);
+   --space-4xl: var(--cp-space-4xl);
 
-    --text-xs: var(--cp-text-xs);
-    --text-sm: var(--cp-text-sm);
-    --text-base: var(--cp-text-base);
-    --text-lg: var(--cp-text-lg);
-    --text-xl: var(--cp-text-xl);
-    --text-2xl: var(--cp-text-2xl);
-    --text-3xl: var(--cp-text-3xl);
-    --text-4xl: var(--cp-text-4xl);
+   --text-xs: var(--cp-text-xs);
+   --text-sm: var(--cp-text-sm);
+   --text-base: var(--cp-text-base);
+   --text-lg: var(--cp-text-lg);
+   --text-xl: var(--cp-text-xl);
+   --text-2xl: var(--cp-text-2xl);
+   --text-3xl: var(--cp-text-3xl);
+   --text-4xl: var(--cp-text-4xl);
 
-    --radius-sm: var(--cp-radius-sm);
-    --radius-md: var(--cp-radius-md);
-    --radius-lg: var(--cp-radius-lg);
-    --radius-xl: var(--cp-radius-xl);
-    --radius-full: var(--cp-radius-full);
+   --radius-sm: var(--cp-radius-sm);
+   --radius-md: var(--cp-radius-md);
+   --radius-lg: var(--cp-radius-lg);
+   --radius-xl: var(--cp-radius-xl);
+   --radius-full: var(--cp-radius-full);
 }

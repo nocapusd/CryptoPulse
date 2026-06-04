@@ -1,5 +1,6 @@
-@import "./reset.css";
+/* Load design tokens first so reset/base styles can use CSS variables */
 @import "./variables.css";
+@import "./reset.css";
 
 body {
     font-family: var(--cp-font-sans);

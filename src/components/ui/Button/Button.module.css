@@ -1,7 +1,10 @@
 .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--cp-space-xs);
     height: var(--cp-button-height);
-    padding: var(--cp-button-padding-x);
-
+    padding: 0 var(--cp-button-padding-x);
     border-radius: var(--cp-button-radius);
     font-size: var(--cp-button-font-size);
     font-weight: var(--cp-button-font-weight);
