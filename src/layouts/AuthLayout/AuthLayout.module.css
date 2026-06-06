@@ -5,8 +5,49 @@
     justify-content: center;
     align-items: center;
 
-    background: var(--cp-color-bg-secondary);
+    background: var(--cp-bg-app);
     padding: var(--cp-space-md);
+}
+
+.decorations {
+    position: fixed;
+    inset: 0;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle:nth-child(1) {
+    width: 420px;
+    height: 420px;
+    background: var(--cp-blob-primary);
+    filter: blur(80px);
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+
+}
+
+.circle:nth-child(2) {
+    width: 200px;
+    height: 200px;
+    background: var(--cp-blob-primary);
+    filter: blur(80px);
+    top: 50%;
+    left: calc(50% + 50vh);
+    transform: translate(-50%,-50%);
+}
+
+.circle:nth-child(3) {
+    width: 320px;
+    height: 320px;
+    background: var(--cp-blob-secondary);
+    filter: blur(80px);
+    bottom: 0;
+    right: 0;
+    transform: translate(50%,50%);
 }
 
 .card {
@@ -18,3 +59,4 @@
     background: var(--cp-auth-card-bg);
     box-shadow: var(--cp-auth-card-shadow);
 }
+
