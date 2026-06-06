@@ -1,16 +1,16 @@
-import { Link } from "react-router-dom";
-import { Button } from "../../components/ui/Button/Button.tsx";
-import { CryptoPulseIcon } from "../../components/ui/Icons/CryptoPulseIcon.tsx";
-import { EyeIcon } from "../../components/ui/Icons/EyeIcon.tsx";
-import { LoginIcon } from "../../components/ui/Icons/LoginIcon.tsx";
-import { Input } from "../../components/ui/Input/Input.tsx";
+import {Link} from "react-router-dom";
+import {Button} from "../../components/ui/Button/Button.tsx";
+import {CryptoPulseIcon} from "../../components/ui/Icons/CryptoPulseIcon.tsx";
+import {EyeIcon} from "../../components/ui/Icons/EyeIcon.tsx";
+import {LoginIcon} from "../../components/ui/Icons/LoginIcon.tsx";
+import {Input} from "../../components/ui/Input/Input.tsx";
 import styles from './LoginPage.module.css';
 
 export const LoginPage = () => {
     return (
         <section className={styles.login}>
             <div className={styles.brand}>
-                <CryptoPulseIcon />
+                <CryptoPulseIcon/>
                 <span>CryptoPulse</span>
             </div>
 
@@ -30,7 +30,7 @@ export const LoginPage = () => {
                     </label>
 
                     <div className={styles.control}>
-                        <Input id={'email'} type={'email'} placeholder={'you@example.com'} />
+                        <Input id={'email'} type={'email'} placeholder={'you@example.com'}/>
                     </div>
                 </div>
                 <div className={styles.field}>
@@ -39,10 +39,10 @@ export const LoginPage = () => {
                     </label>
 
                     <div className={styles.control}>
-                        <Input id={'password'} type={'password'} placeholder={'Enter your password'} />
+                        <Input id={'password'} type={'password'} placeholder={'Enter your password'}/>
 
                         <button type="button" className={styles.eye_icon}>
-                            <EyeIcon />
+                            <EyeIcon/>
                         </button>
                     </div>
 
@@ -53,7 +53,7 @@ export const LoginPage = () => {
 
 
                 <Button type={'submit'}>
-                    <LoginIcon />
+                    <LoginIcon/>
                     <span>Sign in</span>
                 </Button>
             </form>

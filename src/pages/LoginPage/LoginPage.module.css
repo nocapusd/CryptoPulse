@@ -7,7 +7,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: var(--cp-space-sm-custom);
     padding-bottom: var(--cp-space-xl-custom);
     font-size: var(--cp-text-2xl);
     font-weight: var(--cp-font-weight-bold);

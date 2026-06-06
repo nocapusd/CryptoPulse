@@ -6,6 +6,7 @@ export const CryptoPulseIcon = () => {
             height="92"
             viewBox="0 0 92 92"
             fill="none"
+            style={{ display: 'block'}}
         >
             {/* main background */}
             <path
