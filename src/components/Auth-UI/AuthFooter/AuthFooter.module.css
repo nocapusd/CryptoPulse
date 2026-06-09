@@ -1,0 +1,22 @@
+
+.footer {
+    display: flex;
+    justify-content: center;
+    gap: var(--cp-space-xs);
+}
+
+.footer_text {
+    font-size: var(--cp-text-sm);
+    font-weight: var(--cp-font-weight-regular);
+    color: var(--cp-color-text-secondary);
+}
+
+.footer_link {
+    font-size: var(--cp-text-sm);
+    font-weight: var(--cp-font-weight-bold);
+    color: var(--cp-color-primary-light);
+}
+
+.footer_link:hover {
+    color: var(--cp-color-primary);
+}

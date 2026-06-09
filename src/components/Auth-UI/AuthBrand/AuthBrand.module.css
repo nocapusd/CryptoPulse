@@ -1,0 +1,12 @@
+.brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: var(--cp-space-xl-custom);
+    font-size: var(--cp-text-2xl);
+    font-weight: var(--cp-font-weight-bold);
+    background: var(--cp-gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: var(--cp-letter-spacing-title);
+}

@@ -1,9 +1,3 @@
-.login {
-    display: flex;
-    flex-direction: column;
-}
-
-
 
 .form {
     display: flex;
@@ -39,11 +33,9 @@
     align-items: center;
 }
 
-.forgot {
-    font-size: var(--cp-text-sm);
+.password_hint {
+    font-size: var(--cp-text-xs);
     font-weight: var(--cp-font-weight-regular);
-    color: var(--cp-color-primary-light);
-    padding-top: var(--cp-space-xs);
-    align-self: flex-end;
+    color: var(--cp-color-text-secondary);
+    padding-top: 9px;
 }
-

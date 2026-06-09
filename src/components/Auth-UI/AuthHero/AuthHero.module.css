@@ -1,0 +1,20 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: var(--cp-space-2xl-custom);
+}
+
+.hero_title {
+    font-size: var(--cp-text-3xl);
+    font-weight: var(--cp-font-weight-bold);
+    color: var(--cp-color-text-primary);
+    letter-spacing: var(--cp-letter-spacing-title);
+    padding-bottom: var(--cp-space-sm-custom);
+}
+
+.hero_subtitle {
+    font-size: var(--cp-text-sm);
+    font-weight: var(--cp-font-weight-regular);
+    color: var(--cp-color-text-secondary);
+}
