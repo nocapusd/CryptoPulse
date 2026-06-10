@@ -38,3 +38,10 @@
     color: var(--cp-color-text-secondary);
     padding-top: 9px;
 }
+
+.error{
+    font-size: var(--cp-text-xs);
+    font-weight: var(--cp-font-weight-regular);
+    color: var(--cp-color-danger);
+    padding-top: var(--cp-space-sm);
+}

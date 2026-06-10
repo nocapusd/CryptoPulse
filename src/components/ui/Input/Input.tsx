@@ -1,8 +1,10 @@
 import styles from './Input.module.css'
 
-type InputProps = React.InputHTMLAttributes<HTMLInputElement>
+type InputProps = React.InputHTMLAttributes<HTMLInputElement> & {
+    error?: boolean;
+}
 
-export const Input = (props: InputProps) => {
-    return <input className={styles.input} {...props} />
+export const Input = ({error, ...props}: InputProps) => {
+    return <input {...props} className={`${styles.input} ${error ? styles.inputError : ''}`}/>
 };
 

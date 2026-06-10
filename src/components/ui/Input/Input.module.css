@@ -14,10 +14,21 @@
     outline: none;
     transition: 0.2s ease;
 }
+
 .input:focus {
     border-color: var(--cp-input-border-focus);
     box-shadow: var(--cp-input-focus-shadow);
 }
+
 .input::placeholder {
     color: var(--cp-input-placeholder);
+}
+
+.inputError {
+    border-color: red;
+}
+
+.input.inputError:focus {
+    border-color: var(--cp-input-error-border);
+    box-shadow: var(--cp-input-error-shadow);
 }
