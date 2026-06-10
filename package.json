@@ -1,5 +1,5 @@
 {
-  "name": "cryptopulse",
+  "name": "crypto-pulse",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -18,7 +18,9 @@
     "react-hook-form": "^7.76.0",
     "react-redux": "^9.3.0",
     "react-router-dom": "^7.15.1",
-    "recharts": "^3.8.1"
+    "recharts": "^3.8.1",
+    "joi": "^18.2.1",
+    "@hookform/resolvers": "5.4.0"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
