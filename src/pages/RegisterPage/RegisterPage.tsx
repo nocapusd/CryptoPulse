@@ -7,10 +7,10 @@ import RegisterForm from "../../components/forms/RegisterForm/RegisterForm.tsx";
 export const RegisterPage = () => {
     return (
         <section className={styles.login}>
-            <AuthBrand/>
-            <AuthHero title={'Create your account'} subtitle={'Join CryptoPulse to track the crypto market'}/>
+            <AuthBrand />
+            <AuthHero title={'Create your account'} subtitle={'Join CryptoPulse to track the crypto market'} />
             <RegisterForm/>
-            <AuthFooter text={'Already have an account?'} to={'/login'} linkText={'Sign in'}/>
+            <AuthFooter text={'Already have an account?'} to={'/login'} linkText={'Sign in'} />
         </section>
     );
 };

@@ -8,3 +8,4 @@ export const Input = ({error, ...props}: InputProps) => {
     return <input {...props} className={`${styles.input} ${error ? styles.inputError : ''}`}/>
 };
 
+

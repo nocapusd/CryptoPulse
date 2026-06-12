@@ -1,26 +1,39 @@
-import styles from "./RegisterForm.module.css";
-import {Input} from "../../ui/Input/Input.tsx";
+import {joiResolver} from "@hookform/resolvers/joi";
+import {useForm} from "react-hook-form";
+import {schema} from "../../../validators/RegisterForm-Validator/joi-validator.ts";
+import {Button} from "../../ui/Button/Button.tsx";
 import {EyeIcon} from "../../ui/Icons/EyeIcon.tsx";
 import {RegisterIcon} from "../../ui/Icons/RegisterIcon.tsx";
-import {Button} from "../../ui/Button/Button.tsx";
-import {useForm} from "react-hook-form";
-import {joiResolver} from "@hookform/resolvers/joi";
-import {schema} from "../../../validators/RegisterForm-Validator/joi-validator.ts";
+import {Input} from "../../ui/Input/Input.tsx";
+import styles from "./RegisterForm.module.css";
+import {useState} from "react";
 
 
 const RegisterForm = () => {
+
+    const [showPassword, setShowPassword] = useState<boolean>(false)
+    const [showConfirmPassword, setShowConfirmPassword] = useState<boolean>(false);
+
     let {
         register,
         handleSubmit,
         formState: {errors, isValid}
     } = useForm({mode: 'onChange', resolver: joiResolver(schema)});
 
-    const onSubmit = (data: any) => {
+    const onSubmitWithData = (data: any) => {
         console.log("FORM DATA:", data);
     }
 
+    const onClickHandlerPassword = () => {
+        setShowPassword(prev => !prev)
+    }
+
+    const onClickHandlerConfirmPassword = () => {
+        setShowConfirmPassword(prev => !prev)
+    }
+
     return (
-        <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
+        <form onSubmit={handleSubmit(onSubmitWithData)} className={styles.form}>
 
             <div className={styles.field}>
                 <label className={styles.label_field} htmlFor="name">
@@ -54,10 +67,11 @@ const RegisterForm = () => {
                 </label>
 
                 <div className={styles.control}>
-                    <Input id={'password'} error={!!errors.password} {...register('password')}
+                    <Input type={showPassword ? 'text' : 'password'} id={'password'}
+                           error={!!errors.password} {...register('password')}
                            placeholder={'Create a password'}/>
 
-                    <button type="button" className={styles.eye_icon}>
+                    <button onClick={onClickHandlerPassword} type="button" className={styles.eye_icon}>
                         <EyeIcon/>
                     </button>
                 </div>
@@ -74,10 +88,11 @@ const RegisterForm = () => {
                 </label>
 
                 <div className={styles.control}>
-                    <Input id={'confirmPassword'} error={!!errors.confirmPassword} {...register('confirmPassword')}
+                    <Input type={showConfirmPassword ? 'text' : 'password'} id={'confirmPassword'}
+                           error={!!errors.confirmPassword} {...register('confirmPassword')}
                            placeholder={'Repeat your password'}/>
 
-                    <button type="button" className={styles.eye_icon}>
+                    <button onClick={onClickHandlerConfirmPassword} type="button" className={styles.eye_icon}>
                         <EyeIcon/>
                     </button>
                 </div>

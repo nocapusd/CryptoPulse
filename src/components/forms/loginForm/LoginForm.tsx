@@ -4,10 +4,35 @@ import {Link} from "react-router-dom";
 import {Button} from "../../ui/Button/Button.tsx";
 import {LoginIcon} from "../../ui/Icons/LoginIcon.tsx";
 import {EyeIcon} from "../../ui/Icons/EyeIcon.tsx";
+import {useState} from "react";
+import {useForm} from "react-hook-form";
+import {joiResolver} from "@hookform/resolvers/joi";
+import {schema} from "../../../validators/LoginForm-Validator/joi-validator.ts";
 
 const LoginForm = () => {
+
+    const [showPassword, setShowPassword] = useState<boolean>(false)
+
+    let {
+        register,
+        handleSubmit,
+        formState: {errors, isValid}
+    } = useForm({
+        mode: 'onChange',
+        resolver: joiResolver(schema)
+    });
+
+    const onClickHandlerPassword = () => {
+        setShowPassword(prev => !prev)
+    }
+
+    const onSubmitWithData = (data: any) => {
+        console.log("FORM DATA:", data);
+    }
+
+
     return (
-        <form className={styles.form}>
+        <form onSubmit={handleSubmit(onSubmitWithData)} className={styles.form}>
 
             <div className={styles.field}>
                 <label className={styles.label_field} htmlFor="email">
@@ -15,8 +40,12 @@ const LoginForm = () => {
                 </label>
 
                 <div className={styles.control}>
-                    <Input id={'email'} type={'email'} placeholder={'you@example.com'} />
+                    <Input {...register('email')} id={'email'} type={'email'} placeholder={'you@example.com'}/>
                 </div>
+
+                {errors.email &&
+                    (<p className={styles.error}>{errors.email.message as string}</p>)
+                }
             </div>
             <div className={styles.field}>
                 <label className={styles.label_field} htmlFor="password">
@@ -24,12 +53,17 @@ const LoginForm = () => {
                 </label>
 
                 <div className={styles.control}>
-                    <Input id={'password'} type={'password'} placeholder={'Enter your password'} />
+                    <Input {...register('password')} id={'password'} type={showPassword ? 'text' : 'password'}
+                           placeholder={'Enter your password'}/>
 
-                    <button type="button" className={styles.eye_icon}>
-                        <EyeIcon />
+                    <button onClick={onClickHandlerPassword} type="button" className={styles.eye_icon}>
+                        <EyeIcon/>
                     </button>
                 </div>
+
+                {errors.password &&
+                    (<p className={styles.error}>{errors.password.message as string}</p>)
+                }
 
                 <Link to={"#"} className={styles.forgot}>
                     Forgot password?
@@ -37,8 +71,8 @@ const LoginForm = () => {
             </div>
 
 
-            <Button type={'submit'}>
-                <LoginIcon />
+            <Button disabled={!isValid} type={'submit'}>
+                <LoginIcon/>
                 <span>Sign in</span>
             </Button>
         </form>
