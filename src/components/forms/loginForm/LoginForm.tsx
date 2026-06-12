@@ -40,7 +40,7 @@ const LoginForm = () => {
                 </label>
 
                 <div className={styles.control}>
-                    <Input {...register('email')} id={'email'} type={'email'} placeholder={'you@example.com'}/>
+                    <Input {...register('email')}  error={!!errors.email} id={'email'} type={'email'} placeholder={'you@example.com'}/>
                 </div>
 
                 {errors.email &&
@@ -53,7 +53,7 @@ const LoginForm = () => {
                 </label>
 
                 <div className={styles.control}>
-                    <Input {...register('password')} id={'password'} type={showPassword ? 'text' : 'password'}
+                    <Input {...register('password')} error={!!errors.password} id={'password'} type={showPassword ? 'text' : 'password'}
                            placeholder={'Enter your password'}/>
 
                     <button onClick={onClickHandlerPassword} type="button" className={styles.eye_icon}>
