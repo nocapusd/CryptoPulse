@@ -35,16 +35,17 @@ const LoginForm = () => {
         <form onSubmit={handleSubmit(onSubmitWithData)} className={styles.form}>
 
             <div className={styles.field}>
-                <label className={styles.label_field} htmlFor="email">
-                    Email address
+                <label className={styles.label_field} htmlFor="username">
+                    Username
                 </label>
 
                 <div className={styles.control}>
-                    <Input {...register('email')}  error={!!errors.email} id={'email'} type={'email'} placeholder={'you@example.com'}/>
+                    <Input {...register('username')} error={!!errors.username} id={'username'} type={'text'}
+                           placeholder={'enter your username'}/>
                 </div>
 
-                {errors.email &&
-                    (<p className={styles.error}>{errors.email.message as string}</p>)
+                {errors.username &&
+                    (<p className={styles.error}>{errors.username.message as string}</p>)
                 }
             </div>
             <div className={styles.field}>
@@ -53,7 +54,8 @@ const LoginForm = () => {
                 </label>
 
                 <div className={styles.control}>
-                    <Input {...register('password')} error={!!errors.password} id={'password'} type={showPassword ? 'text' : 'password'}
+                    <Input {...register('password')} error={!!errors.password} id={'password'}
+                           type={showPassword ? 'text' : 'password'}
                            placeholder={'Enter your password'}/>
 
                     <button onClick={onClickHandlerPassword} type="button" className={styles.eye_icon}>

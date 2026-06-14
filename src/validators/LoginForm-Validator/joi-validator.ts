@@ -1,9 +1,10 @@
 import Joi from 'joi';
 
 export const schema = Joi.object({
-    email: Joi.string().email().required().messages({
-        'string.email': 'invalid email',
-        'string.empty': 'Email is required',
+    username: Joi.string().min(3).max(30).required().messages({
+        'string.min': 'Username must be at least 3 characters long',
+        'string.max': 'Username must be at most 30 characters long',
+        'string.empty': 'Username is required',
     }),
 
     password: Joi.string().pattern(/^(?=.*[A-Za-z])(?=.*\d).{8,64}$/).required().messages({
