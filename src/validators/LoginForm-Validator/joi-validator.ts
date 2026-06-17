@@ -7,8 +7,9 @@ export const schema = Joi.object({
         'string.empty': 'Username is required',
     }),
 
-    password: Joi.string().pattern(/^(?=.*[A-Za-z])(?=.*\d).{8,64}$/).required().messages({
-        'string.pattern.base': 'Password must contain at least one letter and one number',
+    password: Joi.string().min(3).max(30).required().messages({
+        'string.min': 'Password must be at least 3 characters long',
+        'string.max': 'Password must be at most 30 characters long',
         'string.empty': 'Password is required',
     })
 })

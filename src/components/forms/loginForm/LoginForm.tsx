@@ -1,6 +1,6 @@
 import styles from "./LoginForm.module.css";
 import {Input} from "../../ui/Input/Input.tsx";
-import {Link} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 import {Button} from "../../ui/Button/Button.tsx";
 import {LoginIcon} from "../../ui/Icons/LoginIcon.tsx";
 import {EyeIcon} from "../../ui/Icons/EyeIcon.tsx";
@@ -8,16 +8,23 @@ import {useState} from "react";
 import {useForm} from "react-hook-form";
 import {joiResolver} from "@hookform/resolvers/joi";
 import {schema} from "../../../validators/LoginForm-Validator/joi-validator.ts";
+import type {LoginRequest} from "../../../types/auth.types.ts";
+import {login} from "../../../api/auth.api.ts";
+import {authService} from "../../../services/auth.service.ts";
+import {AxiosError} from "axios";
 
 const LoginForm = () => {
+    const navigate = useNavigate()
 
     const [showPassword, setShowPassword] = useState<boolean>(false)
+    const [serverError, setServerError] = useState<string>('')
+    const [isLoading, setIsLoading] = useState<boolean>(false)
 
-    let {
+    const {
         register,
         handleSubmit,
         formState: {errors, isValid}
-    } = useForm({
+    } = useForm<LoginRequest>({
         mode: 'onChange',
         resolver: joiResolver(schema)
     });
@@ -26,8 +33,39 @@ const LoginForm = () => {
         setShowPassword(prev => !prev)
     }
 
-    const onSubmitWithData = (data: any) => {
-        console.log("FORM DATA:", data);
+    const onSubmitWithData = async (data: LoginRequest) => {
+        try {
+            setServerError('')
+            setIsLoading(true)
+
+            const user = await login(data);
+
+            authService.saveToken(user.accessToken)
+            navigate('/dashboard')
+        } catch (error) {
+            if (!(error instanceof AxiosError)) {
+                setServerError('Unexpected error');
+                return;
+            }
+
+            if (!error.response) {
+                setServerError('Network error. Please check your internet connection.');
+                return;
+            }
+
+            switch (error.response?.status) {
+                case 400:
+                    setServerError('Invalid username or password');
+                    break;
+                case 500:
+                    setServerError('Internal server error');
+                    break
+                default:
+                    setServerError('Something went wrong');
+            }
+        } finally {
+            setIsLoading(false)
+        }
     }
 
 
@@ -40,7 +78,8 @@ const LoginForm = () => {
                 </label>
 
                 <div className={styles.control}>
-                    <Input {...register('username')} error={!!errors.username} id={'username'} type={'text'}
+                    <Input disabled={isLoading} {...register('username')} error={!!errors.username} id={'username'}
+                           type={'text'}
                            placeholder={'enter your username'}/>
                 </div>
 
@@ -54,7 +93,7 @@ const LoginForm = () => {
                 </label>
 
                 <div className={styles.control}>
-                    <Input {...register('password')} error={!!errors.password} id={'password'}
+                    <Input disabled={isLoading} {...register('password')} error={!!errors.password} id={'password'}
                            type={showPassword ? 'text' : 'password'}
                            placeholder={'Enter your password'}/>
 
@@ -66,16 +105,17 @@ const LoginForm = () => {
                 {errors.password &&
                     (<p className={styles.error}>{errors.password.message as string}</p>)
                 }
-
-                <Link to={"#"} className={styles.forgot}>
-                    Forgot password?
-                </Link>
+                {
+                    serverError && <p className={styles.error}>{serverError}</p>
+                }
             </div>
 
 
-            <Button disabled={!isValid} type={'submit'}>
+            <Button disabled={!isValid || isLoading} type={'submit'}>
                 <LoginIcon/>
-                <span>Sign in</span>
+                <span>
+                    {isLoading ? 'Signing in...' : 'Sign in'}
+                </span>
             </Button>
         </form>
     )
