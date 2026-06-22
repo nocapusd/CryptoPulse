@@ -1,0 +1,14 @@
+.appLayout {
+    display: grid;
+    grid-template-columns: var(--cp-sidebar-width) 1fr;
+    min-height: 100vh;
+}
+
+.content {
+    display: grid;
+    grid-template-rows: var(--cp-header-height) 1fr;
+}
+
+.appMain {
+    padding: var(--cp-main-padding-desktop);
+}
